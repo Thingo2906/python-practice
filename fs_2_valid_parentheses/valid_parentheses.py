@@ -27,8 +27,7 @@ def valid_parentheses(parens):
             count += 1
         elif p == ')':
             count -= 1
-
-        # fast fail: too many right parens
+            
         if count < 0:
             return False
         
